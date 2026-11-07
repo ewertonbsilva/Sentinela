@@ -1,0 +1,23 @@
+name: testes
+on:
+  push:
+  pull_request:
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Dependências
+        run: pip install -r requirements.txt
+      - name: Testes
+        run: python -m unittest -v
+      - name: Sintaxe do JavaScript
+        run: for f in static/*.js; do node --check "$f"; done
+      - name: Sintaxe dos scripts de instalação
+        run: for f in deploy/*.sh; do bash -n "$f"; done

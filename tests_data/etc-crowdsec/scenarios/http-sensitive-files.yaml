@@ -1,0 +1,3 @@
+type: trigger
+name: crowdsecurity/http-sensitive-files
+description: "Detect attempt to access to sensitive files (.log, .db ..) or folders (.git)"

@@ -1,0 +1,33 @@
+[Unit]
+Description=Sentinela - painel web do CrowdSec
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=sentinela
+Group=sentinela
+EnvironmentFile=/opt/sentinela/.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PAINEL_ESTADO=/var/lib/sentinela
+StateDirectory=sentinela
+WorkingDirectory=/opt/sentinela
+ExecStart=/usr/bin/python3 /opt/sentinela/painel.py
+# Se o IP de PAINEL_BIND ainda nao existir (ex.: docker0 no boot), tenta de novo
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6
+RestrictNamespaces=true
+LockPersonality=true
+CapabilityBoundingSet=
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+name: crowdsecurity/nginx-proxy-manager
+description: "nginx proxy manager support : parser and generic http scenarios"

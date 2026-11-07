@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-label="Sentinela: painel web para o CrowdSec">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b2a33"/><stop offset="1" stop-color="#2b1518"/></linearGradient>
+    <linearGradient id="chama" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#DC3545"/><stop offset="1" stop-color="#ffb199"/></linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#fundo)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="3">
+    <path d="M900 70 l90 -34 l90 34 v80 c0 50 -40 80 -90 100 c-50 -20 -90 -50 -90 -100 z"/>
+    <circle cx="1090" cy="470" r="70"/><circle cx="1090" cy="470" r="34"/>
+    <path d="M960 330 h200 M960 366 h150"/>
+  </g>
+  <g transform="translate(120 160)">
+    <rect width="260" height="260" rx="58" fill="#2b1518" stroke="#DC3545" stroke-width="8"/>
+    <path d="M36 130 Q130 44 224 130 Q130 216 36 130 Z" fill="none" stroke="#ffffff" stroke-width="12" stroke-linejoin="round"/>
+    <circle cx="130" cy="130" r="40" fill="none" stroke="#ffffff" stroke-width="10"/>
+    <path d="M130 160 c-18 -5 -23 -23 -13 -39 c3 10 10 13 13 5 c5 -10 -3 -21 5 -31 c18 13 29 52 -5 65 z" fill="url(#chama)"/>
+  </g>
+  <text x="440" y="270" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="120" font-weight="700" fill="#ffffff">Sentinela</text>
+  <text x="446" y="340" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="38" fill="#f3d9dc">Painel web para o CrowdSec</text>
+  <text x="446" y="400" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="28" fill="#DC3545" font-weight="600">Somente leitura · login LDAP · Python puro</text>
+</svg>

@@ -1,0 +1,21 @@
+# segredos e configuracao local: NUNCA no git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+# dados gerados em execucao
+liberacoes.jsonl
+estado/
+# dependencia instalada localmente pelo instalador
+lib/
+# python
+__pycache__/
+*.pyc
+.venv/
+# editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

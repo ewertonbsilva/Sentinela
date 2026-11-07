@@ -1,0 +1,7 @@
+# Exemplo: o CrowdSec lendo os logs de acesso do Nginx Proxy Manager (Docker).
+# Ajuste o caminho para onde o seu NPM grava os logs. Copie para /etc/crowdsec/acquis.d/ e reinicie o CrowdSec.
+# Requer a coleção:  sudo cscli collections install crowdsecurity/nginx-proxy-manager
+filenames:
+  - /opt/npm/data/logs/proxy-host-*_access.log
+labels:
+  type: nginx-proxy-manager

@@ -1,0 +1,12 @@
+type: leaky
+name: local/http-404-flood
+description: "Muitos 404 do mesmo IP, incluindo arquivos estaticos"
+filter: "evt.Meta.service == 'http' && evt.Meta.http_status == '404'"
+groupby: evt.Meta.source_ip
+capacity: 20
+leakspeed: 10s
+blackhole: 1m
+labels:
+  service: http
+  type: scan
+  remediation: true

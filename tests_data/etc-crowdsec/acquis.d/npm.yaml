@@ -1,0 +1,4 @@
+filenames:
+  - /opt/npm/data/logs/proxy-host-*_access.log
+labels:
+  type: nginx-proxy-manager

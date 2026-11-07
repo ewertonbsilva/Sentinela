@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-label="Arquitetura: navegador, proxy reverso com HTTPS, Sentinela, API local do CrowdSec e servidor LDAP">
+  <style>
+    text { font-family: Segoe UI, system-ui, Arial, sans-serif; fill: #2b1518; }
+    .t { font-size: 17px; font-weight: 700; }
+    .s { font-size: 13px; fill: #5a4a4c; }
+    .cx { fill: #fff; stroke: #432328; stroke-width: 2; }
+    .dest { fill: #fdecee; stroke: #DC3545; stroke-width: 2.5; }
+    .ln { stroke: #432328; stroke-width: 2; fill: none; marker-end: url(#seta); }
+    .tr { stroke: #8a4b55; stroke-width: 2; fill: none; stroke-dasharray: 6 5; marker-end: url(#seta); }
+  </style>
+  <defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#432328"/></marker></defs>
+  <rect width="1100" height="420" fill="#fbf6f6"/>
+
+  <rect class="cx" x="30" y="150" width="170" height="90" rx="12"/>
+  <text class="t" x="115" y="188" text-anchor="middle">Navegador</text>
+  <text class="s" x="115" y="210" text-anchor="middle">equipe de segurança</text>
+
+  <rect class="cx" x="290" y="150" width="200" height="90" rx="12"/>
+  <text class="t" x="390" y="188" text-anchor="middle">Proxy reverso</text>
+  <text class="s" x="390" y="210" text-anchor="middle">HTTPS + controle de acesso</text>
+
+  <rect class="dest" x="590" y="130" width="230" height="130" rx="14"/>
+  <text class="t" x="705" y="170" text-anchor="middle">Sentinela</text>
+  <text class="s" x="705" y="194" text-anchor="middle">painel.py (Python)</text>
+  <text class="s" x="705" y="214" text-anchor="middle">escuta só em PAINEL_BIND</text>
+  <text class="s" x="705" y="234" text-anchor="middle">sessão em cookie assinado</text>
+
+  <rect class="cx" x="900" y="40" width="170" height="90" rx="12"/>
+  <text class="t" x="985" y="78" text-anchor="middle">CrowdSec</text>
+  <text class="s" x="985" y="100" text-anchor="middle">LAPI :8080 · métricas :6060</text>
+
+  <rect class="cx" x="900" y="260" width="170" height="90" rx="12"/>
+  <text class="t" x="985" y="298" text-anchor="middle">Servidor LDAP</text>
+  <text class="s" x="985" y="320" text-anchor="middle">LDAPS, certificado fixado</text>
+
+  <rect class="cx" x="590" y="310" width="230" height="70" rx="12" stroke-dasharray="5 4"/>
+  <text class="t" x="705" y="340" text-anchor="middle">/etc/crowdsec</text>
+  <text class="s" x="705" y="360" text-anchor="middle">cenários e parsers (só leitura)</text>
+
+  <path class="ln" d="M200 195 L288 195"/>
+  <path class="ln" d="M490 195 L588 195"/>
+  <path class="ln" d="M820 160 L898 100"/>
+  <path class="tr" d="M820 230 L898 290"/>
+  <path class="ln" d="M705 262 L705 308"/>
+
+  <text class="s" x="244" y="184" text-anchor="middle">HTTPS</text>
+  <text class="s" x="539" y="184" text-anchor="middle">HTTP</text>
+  <text class="s" x="880" y="126" text-anchor="middle">alertas</text>
+  <text class="s" x="888" y="266" text-anchor="middle">bind</text>
+  <text class="s" x="550" y="60">O proxy é o único caminho até o painel.</text>
+  <text class="s" x="550" y="80">Rede interna ou ALLOWED_IPS limitam quem chega nele.</text>
+</svg>

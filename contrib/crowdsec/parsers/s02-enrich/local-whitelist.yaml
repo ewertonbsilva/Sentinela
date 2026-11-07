@@ -1,0 +1,10 @@
+# Exemplo: nunca banir a sua rede interna nem o IP público do escritório.
+# Copie para /etc/crowdsec/parsers/s02-enrich/ e rode: sudo systemctl reload crowdsec
+# Troque as faixas abaixo (são faixas de documentação) pelas suas.
+name: local/whitelist
+description: "Redes que nunca devem ser banidas"
+whitelist:
+  reason: "rede interna / escritório"
+  cidr:
+    - "192.0.2.0/24"
+    - "198.51.100.10/32"

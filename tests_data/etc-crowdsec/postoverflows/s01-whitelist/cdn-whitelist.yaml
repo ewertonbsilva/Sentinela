@@ -1,0 +1,2 @@
+name: crowdsecurity/cdn-whitelist
+description: "Whitelist CDN providers"

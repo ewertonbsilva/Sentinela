@@ -1,0 +1,3 @@
+type: leaky
+name: crowdsecurity/http-crawl-non_statics
+description: "Detect aggressive crawl from single ip"

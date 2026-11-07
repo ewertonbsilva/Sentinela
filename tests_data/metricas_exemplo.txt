@@ -1,0 +1,837 @@
+# HELP cs_active_decisions Number of active decisions.
+# TYPE cs_active_decisions gauge
+cs_active_decisions{action="ban",origin="crowdsec",reason="local/http-404-flood"} 1
+# HELP cs_alerts Number of alerts (excluding CAPI).
+# TYPE cs_alerts gauge
+cs_alerts{kind="crowdsec",reason="local/http-404-flood"} 1
+cs_alerts{kind="cscli",reason="teste bouncer"} 1
+# HELP cs_bucket_instantiation_total Total buckets were instantiated.
+# TYPE cs_bucket_instantiation_total counter
+cs_bucket_instantiation_total{name="local/http-404-flood"} 104
+cs_bucket_instantiation_total{name="crowdsecurity/http-crawl-non_statics"} 538
+cs_bucket_instantiation_total{name="crowdsecurity/http-probing"} 113
+# HELP cs_bucket_overflowed_total Total buckets overflowed.
+# TYPE cs_bucket_overflowed_total counter
+cs_bucket_overflowed_total{name="local/http-404-flood"} 1
+# HELP cs_bucket_pour_seconds Time spent pouring an event to buckets.
+# TYPE cs_bucket_pour_seconds histogram
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 21.072818049000073
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 41533
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 0.2620827600000001
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 166
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 0.005687283999999999
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 4
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 0.16310742499999994
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 72
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 0.072283376
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 45
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 0.023167272000000003
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 11
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 0.011116900999999998
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 18
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 1.3354362619999993
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 1712
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 0.036629080999999994
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 26
+cs_bucket_pour_seconds_sum{source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 0.132771491
+cs_bucket_pour_seconds_count{source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 80
+# HELP cs_bucket_poured_total Total events were poured in bucket.
+# TYPE cs_bucket_poured_total counter
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 25
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 78
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 2
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 9
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 5
+cs_bucket_poured_total{name="local/http-404-flood",source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 37
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 861
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 103
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 2
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 67
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 30
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 10
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 6
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 3
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 15
+cs_bucket_poured_total{name="crowdsecurity/http-crawl-non_statics",source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 27
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 26
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 82
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 2
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 8
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 7
+cs_bucket_poured_total{name="crowdsecurity/http-probing",source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 1
+# HELP cs_bucket_underflowed_total Total buckets underflowed.
+# TYPE cs_bucket_underflowed_total counter
+cs_bucket_underflowed_total{name="local/http-404-flood"} 97
+cs_bucket_underflowed_total{name="crowdsecurity/http-crawl-non_statics"} 532
+cs_bucket_underflowed_total{name="crowdsecurity/http-probing"} 108
+# HELP cs_buckets Number of buckets that currently exist.
+# TYPE cs_buckets gauge
+cs_buckets{name="local/http-404-flood"} 6
+cs_buckets{name="crowdsecurity/http-crawl-non_statics"} 5
+cs_buckets{name="crowdsecurity/http-probing"} 5
+# HELP cs_capi_last_pull_timestamp Unix timestamp of the last successful decisions stream pull from the CAPI.
+# TYPE cs_capi_last_pull_timestamp gauge
+cs_capi_last_pull_timestamp 1.7931476473451762e+09
+# HELP cs_features Features enabled on this instance (1 = enabled, 0 = disabled).
+# TYPE cs_features gauge
+cs_features{feature="bot_detection"} 0
+cs_features{feature="capi"} 1
+cs_features{feature="lapi"} 1
+cs_features{feature="log_processor"} 1
+cs_features{feature="papi"} 0
+cs_features{feature="waf"} 0
+# HELP cs_filesource_hits_total Total lines that were read.
+# TYPE cs_filesource_hits_total counter
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-10_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-11_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-12_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-13_access.log"} 41554
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-14_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-15_access.log"} 795
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-17_access.log"} 5
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-19_access.log"} 77
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-1_access.log"} 47
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-20_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-21_access.log"} 20
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-22_access.log"} 22
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-24_access.log"} 2315
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-2_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-3_access.log"} 27
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-5_access.log"} 84
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-6_access.log"} 1
+cs_filesource_hits_total{acquis_type="nginx-proxy-manager",datasource_type="file",source="/opt/npm/data/logs/proxy-host-7_access.log"} 1
+# HELP cs_info Information about Crowdsec.
+# TYPE cs_info gauge
+cs_info{version="v1.8.2-debian-pragmatic-amd64-3d369d64"} 0
+# HELP cs_journalctlsource_hits_total Total lines that were read.
+# TYPE cs_journalctlsource_hits_total counter
+cs_journalctlsource_hits_total{acquis_type="syslog",datasource_type="journalctl",source="journalctl-_SYSTEMD_UNIT=ssh.service"} 66
+# HELP cs_lapi_bouncer_requests_total Number of calls to each route per method grouped by bouncers.
+# TYPE cs_lapi_bouncer_requests_total counter
+cs_lapi_bouncer_requests_total{bouncer="cs-firewall-bouncer-1700000000",method="GET",route="/v1/decisions/stream"} 457
+# HELP cs_lapi_machine_requests_total Number of calls to each route per method grouped by machines.
+# TYPE cs_lapi_machine_requests_total counter
+cs_lapi_machine_requests_total{machine="a1b2c3d4e5f60718293a4b5c6d7e8f90AbCdEfGhIjKlMnOp",method="GET",route="/v1/alerts"} 3
+cs_lapi_machine_requests_total{machine="a1b2c3d4e5f60718293a4b5c6d7e8f90AbCdEfGhIjKlMnOp",method="GET",route="/v1/allowlists/check/:ip_or_range"} 1
+cs_lapi_machine_requests_total{machine="a1b2c3d4e5f60718293a4b5c6d7e8f90AbCdEfGhIjKlMnOp",method="GET",route="/v1/heartbeat"} 75
+cs_lapi_machine_requests_total{machine="a1b2c3d4e5f60718293a4b5c6d7e8f90AbCdEfGhIjKlMnOp",method="POST",route="/v1/alerts"} 2
+cs_lapi_machine_requests_total{machine="painel",method="GET",route="/v1/alerts"} 58
+# HELP cs_lapi_request_duration_seconds Response time of LAPI
+# TYPE cs_lapi_request_duration_seconds histogram
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/alerts",method="GET"} 0.09796383100000002
+cs_lapi_request_duration_seconds_count{endpoint="/v1/alerts",method="GET"} 61
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/alerts",method="POST"} 0.004032394999999999
+cs_lapi_request_duration_seconds_count{endpoint="/v1/alerts",method="POST"} 2
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/allowlists/check/:ip_or_range",method="GET"} 0.000298765
+cs_lapi_request_duration_seconds_count{endpoint="/v1/allowlists/check/:ip_or_range",method="GET"} 1
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/decisions/stream",method="GET"} 0.5528046190000004
+cs_lapi_request_duration_seconds_count{endpoint="/v1/decisions/stream",method="GET"} 457
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/heartbeat",method="GET"} 0.047397161
+cs_lapi_request_duration_seconds_count{endpoint="/v1/heartbeat",method="GET"} 75
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/usage-metrics",method="POST"} 0.017888898
+cs_lapi_request_duration_seconds_count{endpoint="/v1/usage-metrics",method="POST"} 11
+cs_lapi_request_duration_seconds_sum{endpoint="/v1/watchers/login",method="POST"} 0.9390498629999999
+cs_lapi_request_duration_seconds_count{endpoint="/v1/watchers/login",method="POST"} 12
+# HELP cs_lapi_route_requests_total Number of calls to each route per method.
+# TYPE cs_lapi_route_requests_total counter
+cs_lapi_route_requests_total{method="GET",route="/v1/alerts"} 61
+cs_lapi_route_requests_total{method="GET",route="/v1/allowlists/check/:ip_or_range"} 1
+cs_lapi_route_requests_total{method="GET",route="/v1/decisions/stream"} 457
+cs_lapi_route_requests_total{method="GET",route="/v1/heartbeat"} 75
+cs_lapi_route_requests_total{method="POST",route="/v1/alerts"} 2
+cs_lapi_route_requests_total{method="POST",route="/v1/usage-metrics"} 11
+cs_lapi_route_requests_total{method="POST",route="/v1/watchers/login"} 12
+# HELP cs_machines_last_heartbeat_timestamp Unix timestamp of a machine's last heartbeat.
+# TYPE cs_machines_last_heartbeat_timestamp gauge
+cs_machines_last_heartbeat_timestamp{machine="a1b2c3d4e5f60718293a4b5c6d7e8f90AbCdEfGhIjKlMnOp"} 1.7931516073104656e+09
+# HELP cs_node_hits_ko_total Total events unsuccessfully exited node.
+# TYPE cs_node_hits_ko_total counter
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 27137
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 745
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 34
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 42
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 956
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 26
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ko_total{acquis_type="syslog",name="child-crowdsecurity/sshd-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 1056
+cs_node_hits_ko_total{acquis_type="syslog",name="child-crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 44
+cs_node_hits_ko_total{acquis_type="syslog",name="crowdsecurity/sshd-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 66
+cs_node_hits_ko_total{acquis_type="syslog",name="crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 44
+# HELP cs_node_hits_ok_total Total events successfully exited node.
+# TYPE cs_node_hits_ok_total counter
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 97525
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 1589
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 10
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 185
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 96
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 38
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 38
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 5191
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 55
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 162
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 2
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s01-parse",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s01-parse",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s01-parse",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s01-parse",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s01-parse",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s01-parse",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s01-parse",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s01-parse",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41533
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 166
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 4
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 72
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 45
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 11
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 18
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 1712
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 26
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 80
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s01-parse",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s01-parse",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s01-parse",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s01-parse",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s01-parse",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s01-parse",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s01-parse",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s01-parse",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s00-raw",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s00-raw",type="file"} 795
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s00-raw",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s00-raw",type="file"} 77
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s00-raw",type="file"} 47
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s00-raw",type="file"} 20
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s00-raw",type="file"} 22
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s00-raw",type="file"} 2315
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s00-raw",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s00-raw",type="file"} 84
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_ok_total{acquis_type="syslog",name="local/whitelist",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="syslog",name="child-crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="syslog",name="child-crowdsecurity/syslog-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s00-raw",type="journalctl"} 66
+cs_node_hits_ok_total{acquis_type="syslog",name="crowdsecurity/dateparse-enrich",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="syslog",name="crowdsecurity/public-dns-allowlist",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="syslog",name="crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="syslog",name="crowdsecurity/syslog-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s00-raw",type="journalctl"} 66
+cs_node_hits_ok_total{acquis_type="syslog",name="crowdsecurity/whitelists",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_ok_total{acquis_type="unknown",name="crowdsecurity/cdn-whitelist",source="",stage="s01-whitelist",type=""} 1
+cs_node_hits_ok_total{acquis_type="unknown",name="crowdsecurity/google-special-crawlers-whitelist",source="",stage="s01-whitelist",type=""} 1
+cs_node_hits_ok_total{acquis_type="unknown",name="crowdsecurity/rdns",source="",stage="s00-enrich",type=""} 1
+cs_node_hits_ok_total{acquis_type="unknown",name="crowdsecurity/seo-bots-whitelist",source="",stage="s01-whitelist",type=""} 1
+# HELP cs_node_hits_total Total events entered node.
+# TYPE cs_node_hits_total counter
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 124662
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 2334
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 15
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 219
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 138
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 57
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 57
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 6147
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 243
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 3
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s01-parse",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s01-parse",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s01-parse",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s01-parse",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s01-parse",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s01-parse",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s01-parse",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s01-parse",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="child-crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/dateparse-enrich",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41533
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 166
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 4
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 72
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 45
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 11
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 18
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 1712
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 26
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/geoip-enrich",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 80
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/http-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s01-parse",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s01-parse",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s01-parse",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s01-parse",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s01-parse",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s01-parse",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s01-parse",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s01-parse",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s01-parse",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/nginx-proxy-manager-logs",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s01-parse",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s00-raw",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s00-raw",type="file"} 795
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s00-raw",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s00-raw",type="file"} 77
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s00-raw",type="file"} 47
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s00-raw",type="file"} 20
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s00-raw",type="file"} 22
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s00-raw",type="file"} 2315
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s00-raw",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s00-raw",type="file"} 84
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/non-syslog",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s00-raw",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_hits_total{acquis_type="syslog",name="local/whitelist",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_total{acquis_type="syslog",name="child-crowdsecurity/sshd-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 1056
+cs_node_hits_total{acquis_type="syslog",name="child-crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 66
+cs_node_hits_total{acquis_type="syslog",name="child-crowdsecurity/syslog-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s00-raw",type="journalctl"} 66
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/dateparse-enrich",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/public-dns-allowlist",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/sshd-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 66
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/sshd-success-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s01-parse",type="journalctl"} 66
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/syslog-logs",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s00-raw",type="journalctl"} 66
+cs_node_hits_total{acquis_type="syslog",name="crowdsecurity/whitelists",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_hits_total{acquis_type="unknown",name="crowdsecurity/cdn-whitelist",source="",stage="s01-whitelist",type=""} 1
+cs_node_hits_total{acquis_type="unknown",name="crowdsecurity/google-special-crawlers-whitelist",source="",stage="s01-whitelist",type=""} 1
+cs_node_hits_total{acquis_type="unknown",name="crowdsecurity/rdns",source="",stage="s00-enrich",type=""} 1
+cs_node_hits_total{acquis_type="unknown",name="crowdsecurity/seo-bots-whitelist",source="",stage="s01-whitelist",type=""} 1
+# HELP cs_node_wl_hits_ok_total Total events successfully whitelisted by node.
+# TYPE cs_node_wl_hits_ok_total counter
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 21
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 612
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 8
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 337
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 21
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 612
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 8
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 337
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_ok_total{acquis_type="syslog",name="local/whitelist",reason="rede interna",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_wl_hits_ok_total{acquis_type="syslog",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+# HELP cs_node_wl_hits_total Total events processed by whitelist node.
+# TYPE cs_node_wl_hits_total counter
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="local/whitelist",reason="rede interna",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-10_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-11_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-12_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-13_access.log",stage="s02-enrich",type="file"} 41554
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-14_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-15_access.log",stage="s02-enrich",type="file"} 778
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-17_access.log",stage="s02-enrich",type="file"} 5
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-19_access.log",stage="s02-enrich",type="file"} 73
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-1_access.log",stage="s02-enrich",type="file"} 46
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-20_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-21_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-22_access.log",stage="s02-enrich",type="file"} 19
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-24_access.log",stage="s02-enrich",type="file"} 2049
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-2_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-3_access.log",stage="s02-enrich",type="file"} 27
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-5_access.log",stage="s02-enrich",type="file"} 81
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-6_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="nginx-proxy-manager",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="/opt/npm/data/logs/proxy-host-7_access.log",stage="s02-enrich",type="file"} 1
+cs_node_wl_hits_total{acquis_type="syslog",name="local/whitelist",reason="rede interna",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_wl_hits_total{acquis_type="syslog",name="crowdsecurity/public-dns-allowlist",reason="public DNS server",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_wl_hits_total{acquis_type="syslog",name="crowdsecurity/whitelists",reason="private ipv4/ipv6 ip/ranges",source="journalctl-_SYSTEMD_UNIT=ssh.service",stage="s02-enrich",type="journalctl"} 22
+cs_node_wl_hits_total{acquis_type="unknown",name="crowdsecurity/cdn-whitelist",reason="CDN provider",source="",stage="s01-whitelist",type=""} 1
+cs_node_wl_hits_total{acquis_type="unknown",name="crowdsecurity/google-special-crawlers-whitelist",reason="Google special crawlers ip range",source="",stage="s01-whitelist",type=""} 1
+cs_node_wl_hits_total{acquis_type="unknown",name="crowdsecurity/seo-bots-whitelist",reason="good bots (search engine crawlers)",source="",stage="s01-whitelist",type=""} 1
+# HELP cs_papi_invalid_orders_received_total Number of invalid orders received by papi.
+# TYPE cs_papi_invalid_orders_received_total counter
+cs_papi_invalid_orders_received_total 0
+# HELP cs_papi_last_pull_timestamp Unix timestamp of the last successful PAPI pull.
+# TYPE cs_papi_last_pull_timestamp gauge
+cs_papi_last_pull_timestamp 0
+# HELP cs_papi_poll_errors_total Number of errors encountered while polling PAPI.
+# TYPE cs_papi_poll_errors_total counter
+cs_papi_poll_errors_total 0
+# HELP cs_parser_hits_ko_total Total events were unsuccessfully parsed.
+# TYPE cs_parser_hits_ko_total counter
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 17
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 4
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 1
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 1
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 3
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 266
+cs_parser_hits_ko_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 3
+cs_parser_hits_ko_total{acquis_type="syslog",source="journalctl-_SYSTEMD_UNIT=ssh.service",type="journalctl"} 44
+# HELP cs_parser_hits_ok_total Total events were successfully parsed.
+# TYPE cs_parser_hits_ok_total counter
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-10_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-11_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-12_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 41554
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-14_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 778
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 5
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 73
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 46
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-20_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 19
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 19
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 2049
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-2_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 27
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 81
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-6_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="nginx-proxy-manager",source="/opt/npm/data/logs/proxy-host-7_access.log",type="file"} 1
+cs_parser_hits_ok_total{acquis_type="syslog",source="journalctl-_SYSTEMD_UNIT=ssh.service",type="journalctl"} 22
+# HELP cs_parser_hits_total Total events entered the parser.
+# TYPE cs_parser_hits_total counter
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-10_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-11_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-12_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 41554
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-14_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 795
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 5
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 77
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 47
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-20_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 20
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 22
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 2315
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-2_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 27
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 84
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-6_access.log",type="file"} 1
+cs_parser_hits_total{source="/opt/npm/data/logs/proxy-host-7_access.log",type="file"} 1
+cs_parser_hits_total{source="journalctl-_SYSTEMD_UNIT=ssh.service",type="journalctl"} 66
+# HELP cs_parsing_time_seconds Time spent parsing a line
+# TYPE cs_parsing_time_seconds histogram
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-10_access.log",type="file"} 0.000298734
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-10_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-11_access.log",type="file"} 0.000314328
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-11_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-12_access.log",type="file"} 0.000517557
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-12_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 11.839433201999944
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-13_access.log",type="file"} 41554
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-14_access.log",type="file"} 0.000416876
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-14_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 0.2960057269999999
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-15_access.log",type="file"} 795
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 0.01641524
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-17_access.log",type="file"} 5
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 0.035614478
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-19_access.log",type="file"} 77
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 0.02193486099999999
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-1_access.log",type="file"} 47
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-20_access.log",type="file"} 0.000353221
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-20_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 0.025753411
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-21_access.log",type="file"} 20
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 0.010322124999999996
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-22_access.log",type="file"} 22
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 0.8247596309999996
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-24_access.log",type="file"} 2315
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-2_access.log",type="file"} 0.000480254
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-2_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 0.011242763000000001
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-3_access.log",type="file"} 27
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 0.04409739399999999
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-5_access.log",type="file"} 84
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-6_access.log",type="file"} 0.000326065
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-6_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="/opt/npm/data/logs/proxy-host-7_access.log",type="file"} 0.000412001
+cs_parsing_time_seconds_count{source="/opt/npm/data/logs/proxy-host-7_access.log",type="file"} 1
+cs_parsing_time_seconds_sum{source="journalctl-_SYSTEMD_UNIT=ssh.service",type="journalctl"} 0.013537912999999997
+cs_parsing_time_seconds_count{source="journalctl-_SYSTEMD_UNIT=ssh.service",type="journalctl"} 66
+# HELP cs_postoverflow_dropped_total Total overflows dropped because the postoverflow queue was full.
+# TYPE cs_postoverflow_dropped_total counter
+cs_postoverflow_dropped_total{routine="0"} 0
+# HELP cs_postoverflow_queue_depth Overflows waiting for postoverflow parsing.
+# TYPE cs_postoverflow_queue_depth gauge
+cs_postoverflow_queue_depth{routine="0"} 0
+# HELP cs_regexp_cache_size Entries per regexp cache.
+# TYPE cs_regexp_cache_size gauge
+cs_regexp_cache_size{name="bad_user_agents.regex.txt"} 3
+cs_regexp_cache_size{name="thinkphp_cve_2018-20062.txt"} 3
+# HELP go_gc_duration_seconds A summary of the wall-time pause (stop-the-world) duration in garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+# HELP go_gc_gogc_percent Heap size target percentage configured by the user, otherwise 100. This value is set by the GOGC environment variable, and the runtime/debug.SetGCPercent function. Sourced from /gc/gogc:percent.
+# TYPE go_gc_gogc_percent gauge
+# HELP go_gc_gomemlimit_bytes Go runtime memory limit configured by the user, otherwise math.MaxInt64. This value is set by the GOMEMLIMIT environment variable, and the runtime/debug.SetMemoryLimit function. Sourced from /gc/gomemlimit:bytes.
+# TYPE go_gc_gomemlimit_bytes gauge
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+# HELP go_memstats_alloc_bytes Number of bytes allocated in heap and currently in use. Equals to /memory/classes/heap/objects:bytes.
+# TYPE go_memstats_alloc_bytes gauge
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated in heap until now, even if released already. Equals to /gc/heap/allocs:bytes.
+# TYPE go_memstats_alloc_bytes_total counter
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table. Equals to /memory/classes/profiling/buckets:bytes.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+# HELP go_memstats_frees_total Total number of heap objects frees. Equals to /gc/heap/frees:objects + /gc/heap/tiny/allocs:objects.
+# TYPE go_memstats_frees_total counter
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata. Equals to /memory/classes/metadata/other:bytes.
+# TYPE go_memstats_gc_sys_bytes gauge
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and currently in use, same as go_memstats_alloc_bytes. Equals to /memory/classes/heap/objects:bytes.
+# TYPE go_memstats_heap_alloc_bytes gauge
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used. Equals to /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
+# TYPE go_memstats_heap_idle_bytes gauge
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes
+# TYPE go_memstats_heap_inuse_bytes gauge
+# HELP go_memstats_heap_objects Number of currently allocated objects. Equals to /gc/heap/objects:objects.
+# TYPE go_memstats_heap_objects gauge
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS. Equals to /memory/classes/heap/released:bytes.
+# TYPE go_memstats_heap_released_bytes gauge
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes + /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
+# TYPE go_memstats_heap_sys_bytes gauge
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+# HELP go_memstats_mallocs_total Total number of heap objects allocated, both live and gc-ed. Semantically a counter version for go_memstats_heap_objects gauge. Equals to /gc/heap/allocs:objects + /gc/heap/tiny/allocs:objects.
+# TYPE go_memstats_mallocs_total counter
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures. Equals to /memory/classes/metadata/mcache/inuse:bytes.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system. Equals to /memory/classes/metadata/mcache/inuse:bytes + /memory/classes/metadata/mcache/free:bytes.
+# TYPE go_memstats_mcache_sys_bytes gauge
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures. Equals to /memory/classes/metadata/mspan/inuse:bytes.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system. Equals to /memory/classes/metadata/mspan/inuse:bytes + /memory/classes/metadata/mspan/free:bytes.
+# TYPE go_memstats_mspan_sys_bytes gauge
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place. Equals to /gc/heap/goal:bytes.
+# TYPE go_memstats_next_gc_bytes gauge
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations. Equals to /memory/classes/other:bytes.
+# TYPE go_memstats_other_sys_bytes gauge
+# HELP go_memstats_stack_inuse_bytes Number of bytes obtained from system for stack allocator in non-CGO environments. Equals to /memory/classes/heap/stacks:bytes.
+# TYPE go_memstats_stack_inuse_bytes gauge
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator. Equals to /memory/classes/heap/stacks:bytes + /memory/classes/os-stacks:bytes.
+# TYPE go_memstats_stack_sys_bytes gauge
+# HELP go_memstats_sys_bytes Number of bytes obtained from system. Equals to /memory/classes/total:byte.
+# TYPE go_memstats_sys_bytes gauge
+# HELP go_sched_gomaxprocs_threads The current runtime.GOMAXPROCS setting, or the number of operating system threads that can execute user-level Go code simultaneously. Sourced from /sched/gomaxprocs:threads.
+# TYPE go_sched_gomaxprocs_threads gauge
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+# HELP process_network_receive_bytes_total Number of bytes received by the process over the network.
+# TYPE process_network_receive_bytes_total counter
+# HELP process_network_transmit_bytes_total Number of bytes sent by the process over the network.
+# TYPE process_network_transmit_bytes_total counter
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter

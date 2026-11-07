@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Fundo da tela de login: ícones de linha translúcidos (defesa de rede), em estilo de linha -->
+  <g fill="#fff" fill-opacity="0.045" stroke="#fff" stroke-opacity="0.2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- escudo com check -->
+    <g transform="translate(250 200) rotate(-9)">
+      <path d="M0 -130 L108 -88 V12 C108 76 54 118 0 140 C-54 118 -108 76 -108 12 V-88 Z"/>
+      <path d="M-44 8 L-12 40 L50 -32" fill="none" stroke-width="7"/>
+      <path d="M0 -102 L80 -70 V10 C80 58 40 90 0 108 C-40 90 -80 58 -80 10 V-70 Z" fill="none" stroke-opacity="0.1"/>
+    </g>
+
+    <!-- grafo de nós (comunidade / rede) -->
+    <g transform="translate(1340 210) rotate(7)">
+      <g fill="none">
+        <path d="M0 0 L-130 -62 M0 0 L8 -118 M0 0 L120 -52 M0 0 L84 70 M0 0 L-78 78"/>
+        <path d="M-130 -62 L8 -118 L120 -52 L84 70 L-78 78 L-130 -62" stroke-opacity="0.11"/>
+      </g>
+      <circle cx="0" cy="0" r="22"/>
+      <circle cx="-130" cy="-62" r="14"/>
+      <circle cx="8" cy="-118" r="14"/>
+      <circle cx="120" cy="-52" r="14"/>
+      <circle cx="84" cy="70" r="14"/>
+      <circle cx="-78" cy="78" r="14"/>
+    </g>
+
+    <!-- bloqueio (ban) -->
+    <g transform="translate(330 720) rotate(6)">
+      <circle cx="0" cy="0" r="96"/>
+      <circle cx="0" cy="0" r="72" fill="none" stroke-opacity="0.1"/>
+      <path d="M-68 -68 L68 68" fill="none" stroke-width="7"/>
+    </g>
+
+    <!-- cartão de log com alerta -->
+    <g transform="translate(1290 700) rotate(-6)">
+      <rect x="-105" y="-135" width="210" height="270" rx="20"/>
+      <path d="M-68 -78 H68 M-68 -38 H40 M-68 2 H58" fill="none" stroke-width="6"/>
+      <path d="M0 40 L36 104 H-36 Z" fill="none"/>
+      <path d="M0 62 V84 M0 94 V95" fill="none" stroke-width="6"/>
+    </g>
+
+    <!-- escudo pequeno, topo -->
+    <g transform="translate(820 96) rotate(4) scale(0.42)">
+      <path d="M0 -130 L108 -88 V12 C108 76 54 118 0 140 C-54 118 -108 76 -108 12 V-88 Z" stroke-width="8"/>
+      <path d="M-30 -10 V30 M30 -10 V30 M-30 5 H30" fill="none" stroke-width="10"/>
+    </g>
+
+    <!-- pontos de ligação dispersos -->
+    <g fill="#fff" fill-opacity="0.13" stroke="none">
+      <circle cx="520" cy="90" r="6"/><circle cx="640" cy="170" r="4"/><circle cx="1010" cy="140" r="5"/>
+      <circle cx="140" cy="470" r="5"/><circle cx="1470" cy="470" r="6"/><circle cx="560" cy="820" r="5"/>
+      <circle cx="1040" cy="800" r="4"/><circle cx="90" cy="650" r="4"/>
+    </g>
+    <g fill="none" stroke-opacity="0.12" stroke-dasharray="3 14" stroke-width="4">
+      <path d="M520 90 L640 170 L820 96"/><path d="M1010 140 L820 96"/><path d="M560 820 L1040 800"/>
+    </g>
+  </g>
+</svg>
