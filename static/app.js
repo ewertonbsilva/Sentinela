@@ -204,7 +204,7 @@
         box.appendChild(s);
     }
 
-    var CORES_ROSCA = ['#432328', '#b52a37', '#DC3545', '#8a4b55', '#e08a93', '#6d2a33', '#c9a3a8', '#9aa0a6'];
+    var CORES_ROSCA = ['#0f2a43', '#1f6fd0', '#2f80ed', '#2a6fa8', '#8ecae6', '#1d4e7a', '#a9c4de', '#9aa0a6'];
     function rosca(lista) {
         var box = $('rosca');
         limpa(box);

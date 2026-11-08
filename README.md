@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white">
-  <img alt="Somente leitura" src="https://img.shields.io/badge/painel-somente%20leitura-DC3545">
-  <img alt="Sem banco de dados" src="https://img.shields.io/badge/banco%20de%20dados-nenhum-432328">
+  <img alt="Somente leitura" src="https://img.shields.io/badge/painel-somente%20leitura-2f80ed">
+  <img alt="Sem banco de dados" src="https://img.shields.io/badge/banco%20de%20dados-nenhum-0f2a43">
   <img alt="Licença MIT" src="https://img.shields.io/badge/licen%C3%A7a-MIT-green">
 </p>
 

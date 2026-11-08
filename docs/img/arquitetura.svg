@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-label="Arquitetura: navegador, proxy reverso com HTTPS, Sentinela, API local do CrowdSec e servidor LDAP">
   <style>
-    text { font-family: Segoe UI, system-ui, Arial, sans-serif; fill: #2b1518; }
+    text { font-family: Segoe UI, system-ui, Arial, sans-serif; fill: #0a1c2e; }
     .t { font-size: 17px; font-weight: 700; }
     .s { font-size: 13px; fill: #5a4a4c; }
-    .cx { fill: #fff; stroke: #432328; stroke-width: 2; }
-    .dest { fill: #fdecee; stroke: #DC3545; stroke-width: 2.5; }
-    .ln { stroke: #432328; stroke-width: 2; fill: none; marker-end: url(#seta); }
-    .tr { stroke: #8a4b55; stroke-width: 2; fill: none; stroke-dasharray: 6 5; marker-end: url(#seta); }
+    .cx { fill: #fff; stroke: #0f2a43; stroke-width: 2; }
+    .dest { fill: #fdecee; stroke: #2f80ed; stroke-width: 2.5; }
+    .ln { stroke: #0f2a43; stroke-width: 2; fill: none; marker-end: url(#seta); }
+    .tr { stroke: #2a6fa8; stroke-width: 2; fill: none; stroke-dasharray: 6 5; marker-end: url(#seta); }
   </style>
-  <defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#432328"/></marker></defs>
+  <defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f2a43"/></marker></defs>
   <rect width="1100" height="420" fill="#fbf6f6"/>
 
   <rect class="cx" x="30" y="150" width="170" height="90" rx="12"/>
